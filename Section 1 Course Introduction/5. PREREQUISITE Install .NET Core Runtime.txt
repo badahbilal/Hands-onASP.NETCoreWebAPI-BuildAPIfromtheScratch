@@ -1,0 +1,15 @@
+Prerequisite: Installing .NET Core Runtime
+
+To engage in C# programming within VS Code, it's essential to have the .NET Core Runtime installed. You can acquire it for free directly from the Microsoft website.
+
+Without .NET Core installed, you may encounter errors such as "The term 'dotnet' is not recognized as the name of a cmdlet, function, script file, or operable program."
+
+Follow the link provided below, and then select the setup that matches your machine's operating system and specifications. Once the download is complete, proceed with the installation. In case you encounter any difficulties during this process, feel free to post your questions in the Q&A section.
+
+Download .NET Core
+https://dotnet.microsoft.com/download
+
+
+
+
+

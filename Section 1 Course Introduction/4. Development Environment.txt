@@ -1,0 +1,13 @@
+Development Environment
+Operating System: Windows 10 64-bit
+
+Integrated Development Environment (IDE) for This Course: Visual Studio Code
+
+.NET Version Utilized: 5.0.2
+
+Visual Studio Code Extensions Employed:
+
+C# by Microsoft
+C# Extensions by JosKreativ
+NuGet Package Manager by jmrog
+Additional Tools Utilized: Postman
