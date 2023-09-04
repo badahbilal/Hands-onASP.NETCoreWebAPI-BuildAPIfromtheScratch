@@ -1,0 +1,15 @@
+In the "Getting Started" section of this course, you will cover fundamental API development concepts:
+
+Web API Request Workflow: Learn how client-server interactions work in API requests.
+
+Common API Operations: Understand the typical actions and functions performed by APIs.
+
+HTTP Status Codes: Familiarize yourself with frequently used status codes in API responses.
+
+CMS Open API Specification: Explore the API specification for the College Management System.
+
+Creating a Web API Project: Take the first practical step by setting up a web API project for CMS.
+
+Web API Project Components: Gain an overview of the various parts that constitute a web API project.
+
+This section provides a foundational understanding of API development, setting the stage for more in-depth topics in the course.
