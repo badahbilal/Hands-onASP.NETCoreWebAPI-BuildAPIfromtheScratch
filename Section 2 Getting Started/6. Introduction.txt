@@ -1,15 +1,27 @@
-In the "Getting Started" section of this course, you will cover fundamental API development concepts:
+In the "Getting Started" section of this course, you will be introduced to fundamental concepts related to API development. Here is a breakdown of what you'll cover in this section:
 
-Web API Request Workflow: Learn how client-server interactions work in API requests.
+Overview of Web API Requests:
 
-Common API Operations: Understand the typical actions and functions performed by APIs.
+Understand the client-server workflow in a typical API interaction.
+Gain insights into how requests are made from a client to a server and how responses are received.
+Common API Operations:
 
-HTTP Status Codes: Familiarize yourself with frequently used status codes in API responses.
+Learn about the most common operations that API developers frequently use.
+Explore the actions and functions that APIs can perform to manipulate data.
+HTTP Status Codes Overview:
 
-CMS Open API Specification: Explore the API specification for the College Management System.
+Get familiar with commonly used HTTP status codes.
+Understand how status codes are used to convey the outcome of API requests, such as success, errors, or redirects.
+CMS Open API Specification:
 
-Creating a Web API Project: Take the first practical step by setting up a web API project for CMS.
+Examine the Open API specification document for the College Management System (CMS), which is one of the systems you will work on during the course.
+Understand the structure and details of this API specification.
+Creating a Web API Project:
 
-Web API Project Components: Gain an overview of the various parts that constitute a web API project.
+Take the first practical step by creating a new web API project specifically for the CMS.
+Set up the initial environment to start building the API.
+Exploring Web API Project Components:
 
-This section provides a foundational understanding of API development, setting the stage for more in-depth topics in the course.
+Gain an understanding of the different parts and components that make up a web API project.
+Learn about the essential elements and files involved in API development.
+This section serves as a foundation for the course, ensuring that you have a solid grasp of key concepts and practical aspects of API development. It lays the groundwork for the more in-depth topics and hands-on exercises that follow in subsequent sections.
