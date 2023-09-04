@@ -1,0 +1,36 @@
+This course, titled "Hands on ASP.Net Web API - Build from Scratch," is designed to teach students how to create ASP.Net Web APIs from the ground up. The course covers various aspects of Web API development and is available on Udemy. Here is a summary of the course content:
+
+Getting Started:
+
+Learn the basics of Web API.
+Understand HTTP requests and the different components of a Web API project.
+API Controllers:
+
+Explore API controllers, which are essential for Web API projects.
+Learn about controller attributes and their significance.
+Implementing APIs for Collections:
+
+Discover how to handle database communication through repositories.
+Follow step-by-step instructions to build collection APIs.
+Return Types:
+
+Master various approaches to returning responses from API methods.
+Learn how to return results asynchronously.
+Actions for Individual Items:
+
+Implement actions for individual items, including GET, PUT, and DELETE operations.
+APIs for Associations:
+
+Explore different methods for implementing APIs that handle associations between data.
+Downloadable Source Code:
+
+Access downloadable source code that serves as a reference guide for the course material.
+Course Prerequisites:
+
+While prior knowledge of RESTful APIs and ASP.Net Core is beneficial, it's not required.
+The focus is on building Web APIs without delving into other ASP.Net Core details.
+Support and Community:
+
+If you encounter challenges during the course, you can message the instructor on Udemy for assistance.
+Join the student community on Facebook (Coding Masters) to connect with fellow learners, ask questions, and discuss course topics.
+This course aims to equip students with the skills and knowledge needed to create ASP.Net Web APIs from scratch. It covers a range of topics, from fundamental concepts to practical implementation, and provides resources for continued learning and support.
