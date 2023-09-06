@@ -1,0 +1,9 @@
+Dans cette section, nous allons approfondir notre compréhension des contrôleurs.
+
+Nous allons commencer par en apprendre davantage sur les contrôleurs dans ASP.NET Core.
+
+Ensuite, nous allons explorer de manière plus détaillée les attributs.
+
+Enfin, nous verrons l'importance de l'attribut de contrôleur.
+
+Commençons par comprendre ce que sont les contrôleurs.
