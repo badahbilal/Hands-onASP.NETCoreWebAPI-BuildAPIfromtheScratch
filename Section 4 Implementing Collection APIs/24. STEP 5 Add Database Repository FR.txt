@@ -1,0 +1,22 @@
+Dans cette conférence, vous avez ajouté un référentiel de base de données à la bibliothèque de classes CMS.Data.Repository. Voici un résumé des étapes que vous avez suivies :
+
+Création d'un Dossier Repositories : Vous avez créé un nouveau dossier nommé "Repositories" à l'intérieur de la bibliothèque de classes CMS.Data.Repository. Ce dossier sera utilisé pour organiser et contenir toutes les interfaces et implémentations de référentiel.
+
+Ajout de l'Interface ICMSRepository : Vous avez ajouté une nouvelle interface nommée ICMSRepository à l'intérieur du dossier "Repositories". Cette interface définira le contrat pour interagir avec les données des cours.
+
+Définition de la Méthode GetAllCourses : Vous avez inclus la méthode GetAllCourses dans l'interface ICMSRepository, qui renvoie un IEnumerable<Course>. Cette méthode sera responsable de la récupération de tous les cours.
+
+Création de l'Implémentation du Référentiel en Mémoire : Vous avez créé une implémentation du référentiel en mémoire nommée InMemoryCMSRepository qui implémente l'interface ICMSRepository. Ce référentiel en mémoire est une solution temporaire utilisée à des fins de démonstration et sera remplacé par un référentiel de base de données à l'avenir.
+
+Ajout d'un Constructeur par Défaut : Vous avez ajouté un constructeur par défaut à la classe InMemoryCMSRepository.
+
+Implémentation de la Méthode GetAllCourses : Actuellement, la méthode GetAllCourses dans l'InMemoryCMSRepository est laissée vide et sera implémentée dans une future conférence. Cette méthode renverra une liste de cours à partir de la source de données en mémoire.
+
+En exposant le référentiel sous forme d'interface (ICMSRepository), vous avez offert une flexibilité pour les implémentations futures. Vous pouvez choisir d'utiliser un référentiel en mémoire à des fins de test et de démonstration, puis implémenter ultérieurement un référentiel basé sur une base de données, tel qu'un référentiel utilisant Entity Framework, à des fins de production.
+
+Dans les prochaines étapes, vous utiliserez ce référentiel dans le projet principal CMS.WebAPI pour récupérer et renvoyer une liste de cours en réponse à une requête HTTP GET.
+
+
+
+
+

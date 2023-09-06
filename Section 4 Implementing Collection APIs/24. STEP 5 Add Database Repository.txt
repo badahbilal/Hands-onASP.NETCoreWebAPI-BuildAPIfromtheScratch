@@ -1,0 +1,17 @@
+In this lecture, you added a database repository to the CMS.Data.Repository class library. Here's a summary of the steps you followed:
+
+Creating a Repositories Folder: You created a new folder named "Repositories" inside the CMS.Data.Repository class library. This folder will be used to organize and hold all the repository interfaces and implementations.
+
+Adding the ICMSRepository Interface: You added a new interface named ICMSRepository inside the "Repositories" folder. This interface will define the contract for interacting with course data.
+
+Defining the GetAllCourses Method: You included the GetAllCourses method in the ICMSRepository interface, which returns an IEnumerable<Course>. This method will be responsible for fetching all the courses.
+
+Creating the In-Memory Repository Implementation: You created an in-memory repository implementation named InMemoryCMSRepository that implements the ICMSRepository interface. This in-memory repository is a temporary solution used for demonstration purposes and will be replaced with a database repository in the future.
+
+Adding a Default Constructor: You added a default constructor to the InMemoryCMSRepository class.
+
+Implementing the GetAllCourses Method: Currently, the GetAllCourses method in the InMemoryCMSRepository is left blank and will be implemented in a future lecture. This method will return a list of courses from the in-memory data source.
+
+By exposing the repository as an interface (ICMSRepository), you've provided flexibility for future implementations. You can choose to use an in-memory repository for testing and demonstration purposes and later implement a database-backed repository, such as one using Entity Framework, for production use.
+
+In the next steps, you will use this repository in the main CMS.WebAPI project to fetch and return a list of courses in response to an HTTP GET request.
