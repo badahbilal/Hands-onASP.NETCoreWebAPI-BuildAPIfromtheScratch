@@ -14,5 +14,12 @@ namespace cmsWebApi.Controllers
         {
             
         }
+
+        [HttpGet]
+        public string GetCourses(){
+            return "Hello, World!";
+        }
+
+        
     }
 }

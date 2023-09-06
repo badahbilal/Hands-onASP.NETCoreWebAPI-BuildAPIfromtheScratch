@@ -1,0 +1,13 @@
+In this lecture, you learned how to add actions to your controller. Here's a summary of the steps you followed:
+
+Understanding Actions: Actions are methods or operations defined in controller classes. When a client sends an HTTP request to the API, the corresponding methods in the controller get triggered for execution. The most commonly used action attributes are HttpGet, HttpPost, HttpPut, and HttpDelete, which correspond to the GET, POST, PUT, and DELETE HTTP operations, respectively.
+
+Adding an Action to the Courses Controller: In the CoursesController class, you added a new method named GetCourses. Initially, you returned a simple "Hello, world" string to check the behavior. Since the purpose of this action is to fetch resources from the system, you applied the [HttpGet] attribute to it. While it's not strictly necessary to include [HttpGet] for methods that follow the GET convention, it's recommended for clarity and clean coding.
+
+Building the Project: You used the dotnet build command to ensure that the project builds without any errors.
+
+Testing the Action in Postman: You created a new request in Postman for the "GetCourses" action. You set the operation as "GET" and entered the URL as "http://localhost:5000/courses." Upon executing the request, you received the "Hello, world" message from the server in the Postman output.
+
+Updating the Action: You commented out the "Hello, world" statement and changed the return type of the GetCourses method to IEnumerable<Course>. This change is to prepare the action to return a list of actual courses, which will be implemented shortly.
+
+With the action added to the controller, you're ready to move on to the next step, which involves adding appropriate data models to your project. This will allow you to work with real data when implementing the GetCourses action.

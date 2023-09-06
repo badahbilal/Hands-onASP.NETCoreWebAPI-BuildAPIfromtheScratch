@@ -1,0 +1,13 @@
+Dans cette conférence, vous avez appris comment ajouter des actions à votre contrôleur. Voici un résumé des étapes que vous avez suivies :
+
+Compréhension des Actions : Les actions sont des méthodes ou des opérations définies dans les classes de contrôleur. Lorsqu'un client envoie une requête HTTP à l'API, les méthodes correspondantes dans le contrôleur sont déclenchées pour être exécutées. Les attributs d'action les plus couramment utilisés sont HttpGet, HttpPost, HttpPut et HttpDelete, qui correspondent respectivement aux opérations HTTP GET, POST, PUT et DELETE.
+
+Ajout d'une Action au Contrôleur Courses : Dans la classe CoursesController, vous avez ajouté une nouvelle méthode nommée GetCourses. Initialement, vous avez renvoyé une simple chaîne "Hello, world" pour vérifier le comportement. Étant donné que le but de cette action est de récupérer des ressources du système, vous avez appliqué l'attribut [HttpGet] à cette méthode. Bien qu'il ne soit pas strictement nécessaire d'inclure [HttpGet] pour les méthodes qui suivent la convention GET, il est recommandé pour la clarté et le code propre.
+
+Construction du Projet : Vous avez utilisé la commande "dotnet build" pour vous assurer que le projet se construit sans erreurs.
+
+Test de l'Action dans Postman : Vous avez créé une nouvelle requête dans Postman pour l'action "GetCourses". Vous avez défini l'opération comme "GET" et entré l'URL comme "http://localhost:5000/courses". Après avoir exécuté la requête, vous avez reçu le message "Hello, world" du serveur dans la sortie de Postman.
+
+Mise à Jour de l'Action : Vous avez commenté l'instruction "Hello, world" et changé le type de retour de la méthode GetCourses en IEnumerable<Course>. Cette modification vise à préparer l'action à renvoyer une liste de cours réels, qui seront implémentés sous peu.
+
+Avec l'action ajoutée au contrôleur, vous êtes prêt à passer à l'étape suivante, qui consiste à ajouter des modèles de données appropriés à votre projet. Cela vous permettra de travailler avec de vraies données lors de l'implémentation de l'action GetCourses.
