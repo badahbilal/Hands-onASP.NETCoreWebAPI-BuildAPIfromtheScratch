@@ -1,0 +1,24 @@
+Dans cette section "Prise en Main", vous avez couvert plusieurs concepts fondamentaux liés au développement d'API Web, qui serviront de solide base pour votre exploration ultérieure dans le cours. Voici un résumé rapide de ce que vous avez appris :
+
+Cycle de la Requête-Réponse HTTP :
+
+Vous comprenez le flux typique d'une requête HTTP et d'une réponse entre un client et un serveur.
+Vous avez appris comment les requêtes sont traitées côté serveur et comment les réponses sont formées et renvoyées au client.
+Opérations Courantes des API Web :
+
+Vous avez exploré les opérations HTTP couramment utilisées dans les API web, notamment GET, POST, PUT, DELETE et PATCH.
+Vous comprenez l'objectif de chaque opération, tel que la récupération de données, la création de nouvelles ressources, la mise à jour de ressources existantes et la suppression de ressources.
+Codes d'État HTTP :
+
+Vous avez acquis des connaissances sur les codes d'état HTTP utilisés pour indiquer le résultat d'une requête HTTP.
+Vous êtes familier avec les catégories de codes d'état, notamment 2XX (réussite), 4XX (erreurs côté client) et 5XX (erreurs côté serveur).
+Spécification OpenAPI :
+
+Vous avez été présenté à une spécification OpenAPI existante pour un système de gestion de collège, que vous implémenterez dans le cours.
+Création d'un Projet d'API Web :
+
+Vous avez reçu un guide étape par étape sur la création d'un nouveau projet d'API Web en ASP.NET Core en utilisant la commande dotnet new webAPI.
+Prochains Sujets :
+
+Le cours a annoncé la prochaine section, qui fournira une compréhension plus approfondie des contrôleurs d'API, un composant fondamental de tout projet d'API.
+Ces concepts et étapes fondamentaux vous prépareront à une exploration plus approfondie du développement d'API Web à mesure que vous progresserez dans le cours.
