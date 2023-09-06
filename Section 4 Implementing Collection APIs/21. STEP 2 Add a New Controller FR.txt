@@ -1,0 +1,19 @@
+Dans cette conférence, vous avez appris comment ajouter un nouveau contrôleur à votre projet web pour gérer les cours. Voici un résumé des étapes que vous avez suivies :
+
+Supprimer le Contrôleur par Défaut : Étant donné que le projet comporte un contrôleur par défaut "WeatherForecast" dont vous n'avez pas besoin, vous l'avez supprimé du projet.
+
+Ajouter un Nouveau Contrôleur : Pour créer un contrôleur destiné à la gestion des cours, vous avez fait un clic droit sur le dossier "Controllers" de votre projet et sélectionné "Nouvelle Classe C#." Vous avez nommé la classe "CoursesController.cs."
+
+Dérivé de ControllerBase : Dans la classe nouvellement créée "CoursesController," vous l'avez fait dériver de la classe "ControllerBase." Cette héritage indique à ASP.NET Core que cette classe est destinée au développement d'API web.
+
+Créer un Constructeur Vide : Vous avez ajouté un constructeur vide à la classe, qui sera utilisé ultérieurement pour l'injection de dépendances. À ce stade, le constructeur reste vide.
+
+Appliquer l'Attribut Controller : Vous avez ajouté l'attribut "[Controller]" à la classe "CoursesController." Cet attribut fournit un comportement spécifique aux API web pour la classe.
+
+Ajouter des Informations de Routage : Vous avez appliqué l'attribut "[Route]" pour spécifier les informations de routage pour le contrôleur. Initialement, vous avez utilisé le paramètre de routage "courses." Cependant, vous avez également expliqué qu'une meilleure approche consiste à utiliser l'attribut "[controller]" entre crochets pour rendre le routage plus générique. Dans ce cas, ASP.NET Core utilisera le préfixe du nom de classe comme routage, qui est "courses."
+
+Résoudre les Erreurs de Namespace : Visual Studio Code peut afficher des erreurs liées aux espaces de noms manquants. Pour résoudre ces erreurs, vous avez ajouté la directive "using" nécessaire en haut du fichier. Les espaces de noms pertinents, tels que "Microsoft.AspNetCore.Mvc," fournissent l'accès aux termes liés aux API.
+
+Construire le Projet : Vous vous êtes assuré que le projet se construit sans erreurs en utilisant la commande "dotnet build."
+
+En suivant ces étapes, vous avez réussi à ajouter avec succès une nouvelle classe de contrôleur pour gérer les cours dans votre projet d'API Web ASP.NET Core. Dans les prochaines étapes, vous ajouterez des méthodes d'action à cette classe de contrôleur pour définir le comportement des différentes opérations d'API liées aux cours.

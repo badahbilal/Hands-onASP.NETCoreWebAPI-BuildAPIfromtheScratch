@@ -1,0 +1,19 @@
+In this lecture, you learned how to add a new controller to your web project for managing courses. Here's a summary of the steps you followed:
+
+Delete Default Controller: Since the project comes with a default "WeatherForecast" controller that you don't need, you deleted it from the project.
+
+Add a New Controller: To create a controller for managing courses, you right-clicked on the "Controllers" folder in your project and selected "New C# Class." You named the class "CoursesController.cs."
+
+Derive from ControllerBase: In the newly created "CoursesController" class, you made it derive from the "ControllerBase" class. This inheritance signals ASP.NET Core that this class is intended for web API development.
+
+Create an Empty Constructor: You added an empty constructor to the class, which will be used later for dependency injection. At this point, the constructor remains empty.
+
+Apply Controller Attribute: You added the "[Controller]" attribute to the "CoursesController" class. This attribute provides web API-specific behavior for the class.
+
+Add Routing Information: You applied the "[Route]" attribute to specify the routing information for the controller. Initially, you used the route parameter "courses." However, you also explained that a better approach is to use the "[controller]" attribute inside square brackets to make the route more generic. In this case, ASP.NET Core will use the class name prefix as the route, which is "courses."
+
+Resolve Namespace Errors: Visual Studio Code may show errors related to missing namespaces. To resolve these errors, you added the necessary using directive at the top of the file. The relevant namespaces, such as "Microsoft.AspNetCore.Mvc," provide access to API-related terms.
+
+Build the Project: You ensured that the project builds without any errors by using the "dotnet build" command.
+
+By completing these steps, you successfully added a new controller class for managing courses to your ASP.NET Core Web API project. In the next steps, you will add action methods to this controller class to define the behavior for various API operations related to courses.
