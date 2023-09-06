@@ -1,0 +1,19 @@
+In this lecture, the speaker discusses common HTTP operations used by developers in web APIs. Here's a summary of the key points:
+
+Operations Defined: Operations refer to actions taken on a resource. In the context of the lecture, "course" is used as an example of a resource, and actions taken on this resource are referred to as operations. Operations can also be called verbs or methods.
+
+Common HTTP Operations: There are five common HTTP operations frequently used by developers: GET, POST, PUT, DELETE, and PATCH.
+
+GET: Used to retrieve details of a resource. It's the most common operation, often used to fetch data from a database and expose it through an API.
+
+POST: Used to create a new resource on the server. The details required to create the resource are included in the request body. In some cases, POST can also trigger non-resource-related actions.
+
+PUT: Used to update existing resource details. It requires the resource to exist on the server. Some developers may also use PUT to create a new resource if it doesn't exist, although POST is more common for this purpose.
+
+DELETE: Used to remove an existing resource from the server. It typically requires providing the ID of the item to be deleted and careful validation.
+
+PATCH: Used to partially update an existing resource. Unlike PUT, which updates all resource details, PATCH updates only specific parts of the resource. The request body contains the partial details to be updated.
+
+HTTP Status Codes: The lecture suggests that understanding HTTP status codes is essential for web API development. However, it doesn't delve into the details of status codes in this section.
+
+Overall, this lecture provides an overview of common HTTP operations used in web API development, explaining their purposes and typical usage. It emphasizes the importance of understanding these concepts for implementing web APIs effectively.
