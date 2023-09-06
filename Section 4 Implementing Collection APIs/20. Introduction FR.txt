@@ -1,0 +1,15 @@
+Dans cette section intitulée "Implémentation des API de Collections", vous apprendrez comment créer une API de collection dans votre projet ASP.NET Core Web API. Une API de collection fournit généralement un point de terminaison pour récupérer une liste d'éléments pour une ressource spécifique, telle qu'une liste de cours dans un système. Voici un aperçu des étapes impliquées dans l'implémentation d'une API de collection :
+
+Étape Un : Créer un Nouveau Projet d'API Web : Dans la section précédente, vous avez déjà créé un nouveau projet d'API Web ASP.NET Core. Ce projet sert de base pour l'implémentation des API de collection.
+
+Étape Deux : Ajouter un Nouveau Contrôleur : La prochaine étape consiste à ajouter un nouveau contrôleur à votre projet. Les contrôleurs sont responsables du traitement des requêtes HTTP et de la définition du comportement de vos points de terminaison API. Dans ce cas, vous créerez un contrôleur spécifiquement pour gérer la collection d'éléments.
+
+Étape Trois : Ajouter des Actions au Contrôleur : Après avoir créé le contrôleur, vous ajouterez des méthodes d'action. Les méthodes d'action représentent les opérations qui peuvent être effectuées sur la collection. Ces actions définissent comment les clients peuvent interagir avec la collection, notamment les opérations telles que la récupération de tous les éléments, l'ajout de nouveaux éléments, la mise à jour des éléments existants et la suppression d'éléments.
+
+Étape Quatre : Ajouter des Modèles de Données : Les modèles de données représentent la structure et le format des éléments de votre collection. Vous définirez des modèles de données correspondant aux éléments que vous souhaitez gérer dans la collection. Ces modèles définissent les propriétés et les attributs de chaque élément.
+
+Étape Cinq : Implémenter la Couche de Base de Données : Pour travailler avec des collections d'éléments, vous devrez généralement interagir avec une base de données. À cette étape, vous configurerez le référentiel de base de données, qui gère les opérations de base de données telles que la récupération, la création, la mise à jour et la suppression d'éléments.
+
+Étape Six : Implémenter une Opération GET : Enfin, vous implémenterez une opération GET dans votre contrôleur pour récupérer tous les éléments du système et les renvoyer en réponse. Cette opération permet aux clients de récupérer l'ensemble de la collection d'éléments.
+
+À la fin de cette section, vous aurez acquis de l'expérience pratique dans la création de classes de contrôleur, l'ajout de méthodes d'action, la définition de modèles de données, la configuration d'un référentiel de base de données et l'implémentation d'une opération GET pour récupérer des éléments de votre système. Ces compétences sont essentielles pour la création d'API de collection fonctionnelles et basées sur des données dans les projets d'API Web ASP.NET Core. Commençons par ajouter un nouveau contrôleur à votre projet.

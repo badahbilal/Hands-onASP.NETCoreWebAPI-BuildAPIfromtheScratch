@@ -1,0 +1,15 @@
+In this section, titled "Implementing Collection APIs," you will learn how to create a collection API in your ASP.NET Core Web API project. A collection API typically provides an endpoint to retrieve a list of items for a specific resource, such as a list of courses in a system. Here is an overview of the steps involved in implementing a collection API:
+
+Step One: Create a New Web API Project: In the previous section, you've already created a new ASP.NET Core Web API project. This project serves as the foundation for implementing collection APIs.
+
+Step Two: Add a New Controller: The next step is to add a new controller to your project. Controllers are responsible for handling HTTP requests and defining the behavior of your API endpoints. In this case, you'll create a controller specifically for managing the collection of items.
+
+Step Three: Add Actions to the Controller: After creating the controller, you'll add action methods to it. Action methods represent the operations that can be performed on the collection. These actions define how clients can interact with the collection, including operations like retrieving all items, adding new items, updating existing items, and deleting items.
+
+Step Four: Add Data Models: Data models represent the structure and format of the items in your collection. You'll define data models that correspond to the items you want to manage in the collection. These models define the properties and attributes of each item.
+
+Step Five: Implement the Database Layer: To work with collections of items, you'll typically need to interact with a database. In this step, you'll set up the database repository, which handles database operations such as retrieving, creating, updating, and deleting items.
+
+Step Six: Implement a GET Operation: Finally, you'll implement a GET operation in your controller to fetch all items from the system and return them as a response. This operation allows clients to retrieve the entire collection of items.
+
+By the end of this section, you will have gained practical experience in creating controller classes, adding action methods, defining data models, setting up a database repository, and implementing a GET operation to retrieve items from your system. These skills are crucial for building functional and data-driven collection APIs in ASP.NET Core Web API projects. Let's get started by adding a new controller to your project.
