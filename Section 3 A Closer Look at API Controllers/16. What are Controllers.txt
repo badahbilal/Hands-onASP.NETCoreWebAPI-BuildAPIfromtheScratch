@@ -1,0 +1,15 @@
+In web projects, including ASP.NET Core web API projects, controller classes play a crucial role in handling HTTP requests. Here's a summary of the key points about controller classes:
+
+Controller Classes: Controller classes are essential components in web projects, and they are responsible for handling web API requests.
+
+Derivation from Controller Base Class: In ASP.NET Core web API projects, controller classes typically derive from the ControllerBase class, not the standard Controller class. While views in ASP.NET Core are derived from the Controller class, for web APIs, it's common to use the ControllerBase class.
+
+Choosing the Appropriate Base Class: The choice between deriving from Controller or ControllerBase depends on whether you are building web APIs exclusively or combining views and web APIs in the same project. If your focus is primarily on web APIs, it's recommended to derive from ControllerBase as it provides specific methods and properties related to HTTP requests.
+
+Advantages of ControllerBase: The ControllerBase class offers several advantages. It provides methods and properties that are directly related to handling HTTP requests and responses. This includes methods for returning various HTTP status codes like BadRequest, NotFound, and more, which are crucial for communicating the outcome of API requests to clients.
+
+In the course project, the controller class derives from ControllerBase, emphasizing its role in handling web API requests. The specific methods and properties provided by ControllerBase related to HTTP requests and responses will be covered in more detail in later sections of the course.
+
+
+
+

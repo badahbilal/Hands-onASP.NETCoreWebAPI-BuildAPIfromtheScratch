@@ -1,0 +1,11 @@
+Dans les projets web, y compris les projets d'API web ASP.NET Core, les classes de contrôleur jouent un rôle crucial dans le traitement des requêtes HTTP. Voici un résumé des points clés concernant les classes de contrôleur :
+
+Classes de Contrôleur : Les classes de contrôleur sont des composants essentiels dans les projets web, et elles sont responsables du traitement des requêtes d'API web.
+
+Dérivation de la Classe de Base du Contrôleur : Dans les projets d'API web ASP.NET Core, les classes de contrôleur dérivent généralement de la classe ControllerBase, et non de la classe Controller standard. Alors que les vues dans ASP.NET Core dérivent de la classe Controller, pour les API web, il est courant d'utiliser la classe ControllerBase.
+
+Choix de la Classe de Base Appropriée : Le choix entre la dérivation de Controller ou ControllerBase dépend de la question de savoir si vous construisez exclusivement des API web ou si vous combinez des vues et des API web dans le même projet. Si votre principal objectif est les API web, il est recommandé de dériver de ControllerBase car elle offre des méthodes et des propriétés spécifiques liées aux requêtes HTTP.
+
+Avantages de ControllerBase : La classe ControllerBase offre plusieurs avantages. Elle fournit des méthodes et des propriétés directement liées au traitement des requêtes et des réponses HTTP. Cela inclut des méthodes pour renvoyer différents codes d'état HTTP tels que BadRequest, NotFound, et d'autres, qui sont cruciaux pour communiquer le résultat des requêtes API aux clients.
+
+Dans le projet du cours, la classe de contrôleur dérive de ControllerBase, mettant en évidence son rôle dans le traitement des requêtes d'API web. Les méthodes et propriétés spécifiques fournies par ControllerBase concernant les requêtes et les réponses HTTP seront abordées plus en détail dans les sections ultérieures du cours.
