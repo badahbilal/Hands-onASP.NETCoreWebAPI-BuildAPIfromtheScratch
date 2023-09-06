@@ -1,0 +1,15 @@
+In this lecture, the instructor delves deeper into the inner workings of a web API service in ASP.NET Core, explaining fundamental concepts and components. Here's a summarized overview of the key points:
+
+Host (Program.cs): The host encapsulates the web application's resources, including the HTTP server implementation and logging. The CreateDefaultBuilder and ConfigureWebHostDefaults methods configure the host with default options, enabling features like Kestrel as the web server, IIS integration, and configuration file loading (e.g., appsettings.json).
+
+Startup.cs: This file contains core functions and configurations for the web API project.
+
+Services: Services are defined in the ConfigureServices method of Startup.cs. They represent components required by the app and can be accessed through dependency injection throughout the project. The example project adds controllers and Swagger to the service collection but can be extended with custom services.
+
+Dependency Injection: ASP.NET Core includes a built-in dependency injection framework. Services configured in the ConfigureServices method can be resolved in classes using constructor injection. In the current project, no custom services are added yet, but a database repository service will be added later.
+
+Middlewares: Middleware components form the request handling pipeline, processing each HTTP request sequentially. Middlewares are added using use methods and follow a top-down approach. The default project includes middleware related to development, Swagger, HTTP redirection, and more.
+
+Routing: Routing is essential for any web API project. A route is a URL pattern mapped to a handler. When a client makes an HTTP request, the server matches the URL against configured handlers. Routing is enabled using UseRouting, and mapping information is configured using UseEndpoints. The MapControllers method signals ASP.NET to use routing information configured in the controllers and their operations, with routing attributes used to define specific routes.
+
+The instructor emphasizes that these concepts are available by default in a newly created ASP.NET Core Web API project. Understanding these concepts is essential before proceeding further with web API development. These foundational concepts will provide a strong foundation for mastering web API development.

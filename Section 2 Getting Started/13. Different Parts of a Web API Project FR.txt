@@ -1,0 +1,15 @@
+Dans cette conférence, l'instructeur plonge plus profondément dans le fonctionnement interne d'un service d'API Web en ASP.NET Core, expliquant des concepts et composants fondamentaux. Voici un aperçu résumé des points clés :
+
+Hôte (Program.cs) : L'hôte encapsule les ressources de l'application web, y compris l'implémentation du serveur HTTP et la journalisation. Les méthodes CreateDefaultBuilder et ConfigureWebHostDefaults configurant l'hôte avec des options par défaut, activant des fonctionnalités telles que Kestrel comme serveur web, l'intégration avec IIS et le chargement de fichiers de configuration (par exemple, appsettings.json).
+
+Startup.cs : Ce fichier contient les fonctions et configurations essentielles pour le projet d'API Web.
+
+Services : Les services sont définis dans la méthode ConfigureServices de Startup.cs. Ils représentent les composants requis par l'application et peuvent être accessibles via l'injection de dépendances dans tout le projet. Dans l'exemple du projet, des contrôleurs et Swagger sont ajoutés à la collection de services, mais on peut les étendre avec des services personnalisés.
+
+Injection de dépendances : ASP.NET Core inclut un framework d'injection de dépendances intégré. Les services configurés dans la méthode ConfigureServices peuvent être résolus dans les classes à l'aide de l'injection par constructeur. Dans le projet actuel, aucun service personnalisé n'est encore ajouté, mais un service de répertoire de base de données sera ajouté ultérieurement.
+
+Middlewares : Les composants middleware forment le pipeline de traitement des requêtes, traitant chaque requête HTTP séquentiellement. Les middlewares sont ajoutés à l'aide des méthodes use et suivent une approche de haut en bas. Le projet par défaut inclut des middlewares liés au développement, Swagger, la redirection HTTP, etc.
+
+Routage : Le routage est essentiel pour tout projet d'API Web. Une route est un motif d'URL associé à un gestionnaire. Lorsqu'un client effectue une requête HTTP, le serveur associe l'URL aux gestionnaires configurés. Le routage est activé à l'aide de UseRouting, et les informations de mappage sont configurées à l'aide de UseEndpoints. La méthode MapControllers signale à ASP.NET d'utiliser les informations de routage configurées dans les contrôleurs et leurs opérations, avec des attributs de routage utilisés pour définir des routes spécifiques.
+
+L'instructeur insiste sur le fait que ces concepts sont disponibles par défaut dans un projet d'API Web ASP.NET Core nouvellement créé. Comprendre ces concepts est essentiel avant de continuer avec le développement de l'API Web. Ces concepts fondamentaux fourniront une base solide pour maîtriser le développement d'API Web.
