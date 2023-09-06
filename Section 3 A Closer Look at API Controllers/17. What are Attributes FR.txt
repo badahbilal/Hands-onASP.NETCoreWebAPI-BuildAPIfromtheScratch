@@ -1,0 +1,21 @@
+Dans les projets d'API web ASP.NET Core, les attributs sont essentiels pour configurer le comportement des contrôleurs et de leurs méthodes d'action. Voici un résumé des points clés concernant les attributs dans les projets d'API web :
+
+Rôle des Attributs : Les attributs sont utilisés pour configurer le comportement des contrôleurs et de leurs méthodes d'action dans les projets d'API web ASP.NET Core. Ils vous permettent de personnaliser le comportement de vos contrôleurs d'API pour les aligner sur vos besoins métier.
+
+Attributs Courants pour les Contrôleurs :
+
+ApiController Attribute : Cet attribut est appliqué aux contrôleurs liés aux API web. C'est l'un des attributs les plus puissants dans les projets d'API web, et une conférence distincte est consacrée à expliquer son rôle et sa signification.
+
+Route Attribute : L'attribut Route est utilisé pour spécifier le chemin URL d'une méthode d'action à l'intérieur d'un contrôleur. Vous pouvez définir le chemin relatif de l'URL, et vous pouvez également utiliser le mot clé [controller] entre crochets pour générer dynamiquement la route en fonction du nom de la classe du contrôleur. Cette approche évite de coder en dur le nom de la classe et garantit que les attributs de routage restent fonctionnels même si le nom de la classe change à l'avenir.
+
+Attributs Courants pour les Méthodes :
+
+HttpGet et HttpPost Attributes : Ces attributs sont appliqués aux méthodes pour indiquer qu'elles gèrent respectivement les opérations HTTP GET et POST. Ils aident à définir le type de requête HTTP qu'une méthode est conçue pour gérer.
+
+Produces et Consumes Attributes : Ces attributs sont utilisés pour spécifier les types de données qu'une méthode produit (renvoie) et consomme (accepte). Ils sont utiles pour définir le format de données attendu pour les réponses et les requêtes d'API.
+
+Dans la prochaine conférence, le cours approfondira le rôle crucial joué par l'attribut ApiController, fournissant des informations plus détaillées sur sa signification dans les projets d'API web.
+
+
+
+
