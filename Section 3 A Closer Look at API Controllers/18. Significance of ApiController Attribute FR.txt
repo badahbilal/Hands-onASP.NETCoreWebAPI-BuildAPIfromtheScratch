@@ -1,0 +1,15 @@
+Dans cette conférence, l'instructeur explore l'importance de l'attribut ApiController dans les projets d'API web ASP.NET Core. Cet attribut comporte plusieurs implications et fonctionnalités importantes :
+
+Comportements Spécifiques à l'API : Lorsque vous appliquez l'attribut ApiController à une classe, il introduit des comportements et des configurations spécifiques à l'API dans votre projet ASP.NET. Cet attribut peut être appliqué à différents niveaux : au niveau de la classe, de la classe de base ou même au niveau de l'assembly. En l'appliquant au niveau de la classe, cela n'affecte que cette classe spécifique, tandis qu'en l'appliquant au niveau de la classe de base ou de l'assembly, cela affecte plusieurs classes. Il est recommandé de l'appliquer au niveau de la classe pour un meilleur contrôle.
+
+Routage Obligatoire : L'attribut ApiController rend le routage obligatoire via l'attribut Route. En définissant la route comme [route("[controller]")], il impose un modèle de routage spécifique pour les actions à l'intérieur du contrôleur. Les actions ne peuvent pas être accessibles par d'autres moyens tels que UseEndpoints, et le routage est géré à l'intérieur du contrôleur.
+
+Réponse Automatique 400 Bad Request : Cet attribut déclenche automatiquement une réponse HTTP 400 Bad Request en cas d'erreurs de validation du modèle. Si les données envoyées dans une requête ne sont pas correctes selon le modèle, cela entraînera une réponse 400. Ce comportement simplifie la gestion des erreurs et garantit l'intégrité des données.
+
+Sources de Liaison pour les Paramètres : Les actions des API web ASP.NET Core acceptent souvent des paramètres, et l'attribut ApiController permet de spécifier la source des valeurs des paramètres dans la requête HTTP. Les sources de liaison prises en charge comprennent FromBody, FromQuery, FromRoute, et d'autres. L'attribut utilise des règles d'inférence pour lier automatiquement les paramètres complexes à FromBody et les paramètres plus simples à FromRoute ou FromQuery.
+
+Détails de Problème par Défaut pour les Codes d'État d'Erreur : L'attribut ApiController vous permet de renvoyer des codes d'état d'erreur avec des détails de problème par défaut. Par exemple, le renvoi d'un code d'état 404 Not Found peut inclure une instance NotFound faisant référence au type ProblemDetails avec des détails d'erreur.
+
+Type de Requête Supporté avec l'Attribut Consumes : Cet attribut vous permet de spécifier les types de requête pris en charge à l'aide de l'attribut Consumes. Vous pouvez l'appliquer au niveau du contrôleur ou de l'action pour indiquer les types de contenu de requête acceptables.
+
+L'instructeur reconnaît que ces concepts peuvent être difficiles à ce stade, mais il assure qu'ils seront abordés plus en détail tout au long du cours. À la fin du cours, vous vous sentirez à l'aise avec ces concepts et leurs applications pratiques dans le développement d'API web.
