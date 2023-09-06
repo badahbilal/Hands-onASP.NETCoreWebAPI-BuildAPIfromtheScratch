@@ -1,0 +1,20 @@
+Dans cette section de la conférence, l'instructeur guide à travers le processus de création d'un nouveau projet d'API Web en utilisant Visual Studio Code. Voici un aperçu résumé étape par étape :
+
+Sélectionner un dossier : Ouvrez Visual Studio Code et accédez au menu Fichier. Choisissez "Ouvrir un dossier" pour sélectionner le dossier où vous souhaitez créer votre projet. L'instructeur suggère d'utiliser un dossier nommé "CMS web API" sous le répertoire "Documents" comme exemple.
+
+Création du projet d'API Web : Dans le dossier sélectionné, créez un nouveau dossier de projet avec le nom "CMS.webAPI."
+
+Utilisation du terminal : Ouvrez le terminal intégré dans Visual Studio Code. L'instructeur mentionne qu'ils utiliseront la commande dotnet pour créer le projet d'API Web.
+
+Création du projet : Pour créer un nouveau projet d'API Web, utilisez la commande suivante : dotnet new webAPI. Cette commande met en place la structure de base d'un projet d'API Web.
+
+Exploration du projet créé : Après la création du projet, développez le dossier du projet "CMS web API" pour afficher les fichiers par défaut générés par la commande dotnet. Les fichiers clés mentionnés comprennent :
+
+Startup.cs : Contient des méthodes pour configurer les services et l'application. Il est utilisé pour configurer les paramètres de base de l'API Web.
+Program.cs : Contient le code pour démarrer l'application et créer un hôte.
+Modèle WeatherForecast et WeatherForecastController : Ces éléments sont créés comme composants de démonstration pour présenter l'utilisation de l'API.
+Exécution de l'application : Pour exécuter l'application d'API Web, utilisez la commande dotnet run dans le terminal. L'application commence à écouter sur le port 5000.
+
+Test avec Postman : L'instructeur suggère d'utiliser Postman pour tester l'API. Ils fournissent des instructions pour créer une nouvelle collection et une requête. Dans cet exemple, une requête nommée "prévisions météo" avec la méthode HTTP GET est créée pour tester le contrôleur par défaut "WeatherForecast". La requête est envoyée, et des données d'exemple sont reçues en réponse.
+
+La conférence se termine en mentionnant que le projet d'API Web peut être étendu avec une logique métier personnalisée. Les futures conférences exploreront différents aspects du développement d'API Web.
